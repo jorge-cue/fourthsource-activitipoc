@@ -1,0 +1,13 @@
+{
+  "groups": [{
+    "name": "mx.fourthsource.activitipoc",
+    "type": "mx.fourthsource.activitipoc.config.ActivitiPocProperties",
+    "sourceType": "mx.fourthsource.activitipoc.config.ActivitiPocProperties"
+  }],
+  "properties": [{
+    "name": "mx.fourthsource.activitipoc.adapter-ws-u-r-l",
+    "type": "java.lang.String",
+    "sourceType": "mx.fourthsource.activitipoc.config.ActivitiPocProperties"
+  }],
+  "hints": []
+}

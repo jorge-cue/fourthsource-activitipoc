@@ -1,0 +1,27 @@
+#
+#
+
+spring:
+  activiti:
+    deployment-name: POC
+    job-executor-activate: true
+    mail-server-default-from: noresponse@localhost
+  datasource:
+    url: jdbc:h2:mem:activiti;MODE=PostgreSQL;DB_CLOSE_DELAY=-1;AUTO_RECONNECT=TRUE
+    username: sa
+    password: 
+logging:
+  level:
+    root: warn
+    mx.fourthsource.activitipoc: trace
+  path: ${user.home}/logs
+  file: activitipoc.log
+  
+---
+spring:
+  profiles:
+    active: dev
+mx:
+  fourthsource:
+    activitipoc:
+      adapterWsURL: http://localhost:8085/projectbudget-adapter-ws/
